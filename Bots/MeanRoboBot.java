@@ -105,9 +105,7 @@ public class MeanRoboBot extends AdvancedRobot
 		// Replace the next line with any behavior you would like
 		turnGunRight(e.getBearing());
 		fire(15);
-		turnLeft(60);
-		back(50);
-		
+				
 	}
 	
 	/**
