@@ -88,6 +88,7 @@ public class MeanRoboBot extends AdvancedRobot
 	
 		if (e.getBearing() >= 0) {
 			turnDirection = 25;
+			turnGunRight(e.getBearing());
 		} else {
 			turnDirection = -25;
 		}
