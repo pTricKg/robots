@@ -37,28 +37,7 @@ public class MeanRoboBot extends AdvancedRobot
 	 * onScannedRobot: What to do when you see another robot
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
-		// Replace the next line with any behavior you would like
-		//turnGunLeft(e.getBearing());
-		// Lock on to our target (I hope...)
-		//setTurnRadarRight(e.getBearing());
-		// Lock on to our target (this time for sure)
-		//setTurnRadarRight(getHeading() - getRadarHeading() + e.getBearing());
-		
-	
-		/*
-		 * 	if (e.getBearing() >= 0) {
-			turnDirection = 1;
-		} else {
-			turnDirection = -1;
-			
-		}
-	
-		turnRight(e.getBearing());
-		ahead(e.getDistance() + 5);
-		scan(); // Might want to move ahead again!
-		fire(15);
-		 */
-		
+				
 		double absoluteBearing = getHeading() + e.getBearing();
 		double bearingFromGun = normalRelativeAngleDegrees(absoluteBearing - getGunHeading());
 
@@ -110,6 +89,7 @@ public class MeanRoboBot extends AdvancedRobot
 		} else if (e.getEnergy() > .4) {
 			fire(.1);
 		}
+		turnGunRight(e.getBearing());
 		fire(15);
 		turnRight(45);
 		back(20);
