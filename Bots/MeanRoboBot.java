@@ -28,8 +28,9 @@ public class MeanRoboBot extends AdvancedRobot
 			
 			//
 			
-			//ahead(10);
+			ahead(100);
 			turnGunRight(10);
+			back(100);
 			}
 	}
 
