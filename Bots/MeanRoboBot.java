@@ -88,7 +88,7 @@ public class MeanRoboBot extends AdvancedRobot
 		} else if (e.getEnergy() > .4) {
 			fire(.1);
 		}
-		turnGunRight(e.getBearing());
+		//turnGunRight(e.getBearing());
 		fire(15);
 		turnRight(45);
 		back(20);
@@ -104,6 +104,7 @@ public class MeanRoboBot extends AdvancedRobot
 		// Replace the next line with any behavior you would like
 		//turnGunRight(e.getBearing());
 		fire(15);
+		ahead(100);
 				
 	}
 	
