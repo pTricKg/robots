@@ -1,4 +1,4 @@
-package pjg.Bot;
+package pjg.Bots;
 import robocode.*;
 import robocode.Robot;
 

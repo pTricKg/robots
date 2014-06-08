@@ -1,4 +1,4 @@
-package pjg.Bot;
+package pjg.Bots;
 import robocode.*;
 import java.awt.Color;
 import robocode.ScannedRobotEvent;
