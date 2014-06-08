@@ -27,10 +27,8 @@ public class MeanRoboBot extends AdvancedRobot
 			// Replace the next 4 lines with any behavior you would like
 			
 			//
-			
-			ahead(100);
 			turnGunRight(10);
-			back(100);
+			
 			}
 	}
 
