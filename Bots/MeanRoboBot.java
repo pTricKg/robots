@@ -103,7 +103,7 @@ public class MeanRoboBot extends AdvancedRobot
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
-		turnGunRight(e.getBearing());
+		//turnGunRight(e.getBearing());
 		fire(15);
 				
 	}
