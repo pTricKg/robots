@@ -6,12 +6,8 @@ import robocode.*;
 import robocode.ScannedRobotEvent;
 
 
-/**
- * MyFirstRobot - a sample robot by Mathew Nelson
- * <p/>
- * Moves in a seesaw motion, and spins the gun around at each end
- */
-public class OneBot extends Robot {
+
+public class testingBot extends Robot {
 
 	public void run() {
 
