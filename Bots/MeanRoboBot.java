@@ -65,10 +65,10 @@ public class MeanRoboBot extends AdvancedRobot
 		public void onHitRobot(HitRobotEvent e) {
 	
 		if (e.getBearing() >= 0) {
-			turnDirection = 25;
-			turnGunRight(e.getBearing());
+			turnDirection = 90;
+			
 		} else {
-			turnDirection = -25;
+			turnDirection = -90;
 		}
 			
 		turnRight(e.getBearing());
@@ -90,7 +90,7 @@ public class MeanRoboBot extends AdvancedRobot
 		}
 		//turnGunRight(e.getBearing());
 		fire(15);
-		turnRight(45);
+		turnRight(90);
 		back(20);
 		ahead(40); // Ram him again!
 		
@@ -103,7 +103,10 @@ public class MeanRoboBot extends AdvancedRobot
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
 		//turnGunRight(e.getBearing());
-		fire(15);
+		double absoluteBearing = getHeading() + e.getBearing();
+		double bearingFromGun = normalRelativeAngleDegrees(absoluteBearing - getGunHeading());
+		fire(Math.min(3 - Math.abs(bearingFromGun), getEnergy() - .1));
+		turnRight(90);
 		ahead(100);
 				
 	}
