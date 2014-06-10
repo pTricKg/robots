@@ -6,7 +6,7 @@ import robocode.*;
 import robocode.ScannedRobotEvent;
 
 
-
+// testingBot
 public class testingBot extends Robot {
 
 	public void run() {
