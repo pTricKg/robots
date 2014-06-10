@@ -17,19 +17,12 @@ public class OneBot extends Robot
 	 * run: OneBot's default behavior
 	 */
 	public void run() {
-		// Initialization of the robot should be put here
-
-		// After trying out your robot, try uncommenting the import at the top,
-		// and the next line:
 		
-
 		setColors(Color.green,Color.blue,Color.green); // body,gun,radar
-		// Prepare gun
 		
-
 		// Robot main loop
 		while(true) {
-			// Replace the next 4 lines with any behavior you would like
+			
 			//ahead(100);
 			
 			turnRight(5 * turnDirection);
@@ -44,7 +37,7 @@ public class OneBot extends Robot
 	 * onScannedRobot: What to do when you see another robot
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
-		// Replace the next line with any behavior you would like
+	
 		if (e.getBearing() >= 0) {
 			turnDirection = 1;
 		} else {
