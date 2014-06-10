@@ -22,11 +22,9 @@ public class MeanRoboBot extends AdvancedRobot
 		
 		setColors(Color.black,Color.red,Color.green); // body,gun,radar
 
-	// Robot main loop
+		// Robot main loop
 		while(true) {
-			// Replace the next 4 lines with any behavior you would like
 			
-			//
 			turnGunRight(10);
 			
 			}
