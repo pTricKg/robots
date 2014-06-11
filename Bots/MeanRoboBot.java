@@ -10,9 +10,9 @@ import static robocode.util.Utils.normalRelativeAngleDegrees;
 
 // API help : http://robocode.sourceforge.net/docs/robocode/robocode/Robot.html
 
-/**
- * MeanRoboBot - a robot by pTricKg
- */
+
+//MeanRoboBot - a robot by pTricKg
+ 
 public class MeanRoboBot extends AdvancedRobot
 {
 	int turnDirection = 1;
